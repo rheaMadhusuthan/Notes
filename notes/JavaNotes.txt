@@ -1,0 +1,25 @@
+JVM
+- Java needs JVM. Java is OS independent but JVM is not.
+- JVM needs byte code. Happens after using compiler and byte code extension is .class
+
+JRE (Java run time env)
+- JVM + libraries
+- Java is WORA - write once and run any where
+- JDK is not needed to run one application in another machine. Only JRE
+
+Data type
+- Literal is the value given to a datatype
+- Type conversion
+ - explicit - casting - int -> short
+ - implicit - short -> int
+1. Primitive
+    1.a: Integer -  int(4 bytes), byte(1 byte - 8 bits : -128 t0 127), short(2 bytes), long(8 bytes :  7l - in this 7 is a literal)
+    1.b: Float - double(default), float(5.6f)
+    1.c: Character - follows UNICODE -  can increment character like integers : char a = 'a'; a++; print(a) : b
+    1.d: Boolean
+
+
+Logical operators - short circuit (first condition is checked, if true only then goes to next) - &&, ||, !
+
+# ----------- For loop done : 16 -----------------------s
+
