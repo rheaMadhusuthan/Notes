@@ -1,0 +1,31 @@
+- Open source automation server
+- multiple plugins to support building, deployment and automating any project
+- Jenkins can be downloaded as read only images (docker image) and run on docker container when needed
+- Jenkins can be deployed on ec2 machines or docker
+    - docker is better because of flat rate pricing and a fixed number of nodes
+    - can install jenkins using docker, standalone, kubernetes
+- Jenkins follow master slave(nodes) architecture
+- can achieve CI/CD (continuous integration / continuous deployment)
+- blue green deployment
+    - create 2 separate but identical env (blue, green)
+    - if blue is running with current application, green will run with new app version
+    - after testing, blue is deprecated
+    - reduces deployment risk, easy roll back, increase availability
+
+ Jenkins job
+ fundamental unit of logical work(build, test, deploy) using jenkins automation server, plugins, config
+ types:
+    1. freestyle
+    2. multi config
+    3. pipeline
+    4. multi branch
+- can disable or terminate jobs
+
+
+Jenkins pipeline
+- can be declarative(generic steps) or scripted(groovy code)
+
+Multi branch pipeline
+- create set of pipeline job to detected multiple branches in one repo
+
+- can trigger pipeline manually, web hooks or git actions, jenkins cli or by other jenkins jobs

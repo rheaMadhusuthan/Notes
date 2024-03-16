@@ -1,0 +1,54 @@
+Docker is open platform for developing, shipping and running applications.
+- separates your application from infra -> quick software delivery
+
+Docker platform
+- ability to package and run an app in a loosely isolated env -> container
+- on a host -> can run multiple containers simultaneously
+    - host are usually virtual like cloud services(ec2)
+- 3 main parts
+    1. docker client (cli + restful api)
+    2. docker host (docker daemon + container + images -> establish connection to registry)
+    3. registry (docker images)
+
+Docker container
+- developers create software copies of computers where their applications are launched and run.
+
+
+   VM                                           Docker
+App A           App B                       App A           AppB     --> containerization
+Bin/Libraries   Bin/Libraries               Bin/lib         Bin/Lib  -->
+Guest OS        Guest OS
+---------------------------------------------------------------------------
+        Hypervisor                              Docker Daemon
+        OS                                      OS
+        Physical server                         Physical server
+
+
+
+Docker Architecture
+                    Clint docker cli
+container <---      Rest API                ---> image
+network   <---                              --->data volumes
+                    server docker daemon
+
+
+Cons:
+    1. Lacks storage option (like in ec2 -> volume data)
+    2. Monitoring options are less (aws -> cloudwatch, insights)
+    3. can't automatically reschedule inactive nodes
+    4. Horizontal scale up is complicated
+
+Virtualization
+create virtual version of resource such as server, data storage or app. Divide system into separate systems.
+Containerization
+Same server but different applications working separately
+
+Critical docker commands
+1. build - build docker image
+2. commit - create new image from container changes
+3. create - creates a new container
+4. dockerd - launches docker daemon
+5. kill - kills container
+
+
+
